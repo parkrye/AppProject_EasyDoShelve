@@ -4,7 +4,7 @@
 
 ## 다운로드
 
-최신 버전 0.2.4 — [Releases 페이지](https://github.com/parkrye/AppProject_EasyDoShelve/releases)에서 `EasyDoShelve-<버전>.apk`를 받아 설치. Android 8.0 이상, 64비트 · 32비트 ARM 기기.
+최신 버전 0.2.5 — [Releases 페이지](https://github.com/parkrye/AppProject_EasyDoShelve/releases)에서 `EasyDoShelve-<버전>.apk`를 받아 설치. Android 8.0 이상, 64비트 · 32비트 ARM 기기.
 
 - 처음 설치 시 "출처를 알 수 없는 앱" 설치 허용 필요. Play 프로텍트가 검사 화면을 띄울 수 있음
 - 업데이트는 새 APK를 같은 방식으로 덮어 설치. 서재 · 규칙 · 사전 유지
@@ -31,8 +31,8 @@
 - 미번역 번역: 번역 안 된 화가 있는 작품만, 그 화만 번역(번역된 화는 유지). 번역 수단이 모두 쉬는 동안은 기다렸다 이어 감
 - 번역 작업: 미번역 번역 · 다시 번역은 고른 작품을 한 작업으로 묶어 차례로 번역. 다운로드 · 홈 탭에 전체 진척(막대 · 소설 n / N · 번역 화 수 · %)과 작품별 진척(막대 · 화 x / y · 대기 / 번역 중 / 완료 / 실패), 알림에 전체 진척과 지금 작품. 한 작품이 실패하면 실패 목록에 남기고 다음 작품으로 넘어감
 - 키가 필요한 수단(Gemini · DeepL · Azure)은 켤 때 키 입력, 키가 없으면 꺼짐. 키는 백업에 넣지 않음
-- 사전: Gemini는 지시문으로 전달, 나머지는 원문 단어를 번역어로 바꿔 넣은 뒤 번역
-- 루비는 원문에 `瞳(モノアイ)`로 남기고 번역 때는 읽기 제거
+- 사전: Gemini는 지시문으로 전달, 기기 내(ML Kit)는 원문 단어를 라틴 토큰으로 바꿔 번역한 뒤 번역어로 되돌리고 뒤 조사를 받침에 맞춤(토큰이 남거나 번역어가 빠진 줄은 번역어를 넣어 다시 번역), 나머지는 원문 단어를 번역어로 바꿔 넣은 뒤 번역. 단어 찾기는 전각 · 반각 차이 무시. 번역어가 빠지면 로그만 남김
+- 루비는 원문에 `瞳(モノアイ)`로 남기고 번역 때는 읽기 제거(머리말 포함)
 
 ### 이용 시 주의
 
@@ -76,6 +76,7 @@ EasyDo 시리즈는 인터넷 권한을 쓰지 않는 것이 원칙이지만, �
 | [EasyDoMix](https://github.com/parkrye/AppProject_EasyDoMix) | 영상 · 오디오 편집 | Android |
 | [EasyDoRecord](https://github.com/parkrye/AppProject_EasyDoRecord) | 녹음 | Android |
 | [EasyDoStudio](https://github.com/parkrye/DesktopProject_EasyDoStudio) | 화면 녹화 · 영상 편집 | Windows |
+| [EasyDoMusic](https://github.com/parkrye/MultiProject_EasyDoMusic) | MIDI 연주 · 작곡 | Android · Windows |
 
 ## 라이선스
 
